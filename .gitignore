@@ -1,0 +1,9 @@
+# local / temporary files never published
+.DS_Store
+*.tmp
+*.log
+*.png
+*.jpg
+.env*
+node_modules/
+__pycache__/
