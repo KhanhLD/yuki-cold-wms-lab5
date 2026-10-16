@@ -2,7 +2,7 @@
 
 Báo cáo SWP đầy đủ (HTML, chỉ đọc): [docs/estimate-swp-khanhld-project-1-20261015-1710.html](docs/estimate-swp-khanhld-project-1-20261015-1710.html).
 
-Skill `estimate-swp` đọc 279 item của GitHub Project: 13 epic, 61 issue có sub-issue (cộng 74 item cha, cha lấy tổng con) và 205 lá. Skill chấm trực tiếp từng lá bằng hai điểm Scope và Complexity, tra bảng ra Standard Work Point (SWP). Ở đầu báo cáo HTML có dòng `existingEstimateCheck: unavailable`: đó là bước skill kiểm "issue này đã có estimate chưa" nhờ công cụ KPI của công ty, và nó không chạy được vì dự án lab này không nằm trên công cụ đó. Skill vì vậy chấm tất cả 205 lá, không bỏ issue nào.
+Skill `estimate-swp` đọc 279 item của GitHub Project: 13 epic, 61 issue có sub-issue (cộng 74 item cha, cha lấy tổng con) và 205 lá. Skill chấm trực tiếp từng lá bằng hai điểm Scope và Complexity, tra bảng ra Standard Work Point (SWP). Báo cáo HTML ghi "Kiểm tra estimate hiện có: … không khả dụng — vẫn estimate" (trong dữ liệu nhúng của báo cáo là `existingEstimateCheck: unavailable`): đó là bước skill kiểm "issue này đã có estimate chưa" nhờ công cụ KPI của công ty, và nó không chạy được vì dự án lab này không nằm trên công cụ đó. Skill vì vậy chấm tất cả 205 lá, không bỏ issue nào.
 
 Tổng SWP trong HTML là 1057, trên Project là 1060: hai con số chênh đúng 3 SWP, do chủ dự án chỉnh tay một issue sau khi skill chạy (mục đầu bên dưới). Mọi bảng số của file này sinh bằng script từ ảnh chụp Project đọc ngược ngày 2026-10-16 và từ dữ liệu nhúng trong HTML, rồi được script kiểm lại sau khi dán.
 

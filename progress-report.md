@@ -69,6 +69,8 @@ Cả năm issue dở đều dở vì chờ khách chứ không vì đội làm c
 
 Các hành động và ngày dưới đây là kế hoạch lập ở cuối Sprint 1. Mốc dự án lấy từ LAB-1 v1 (2026-09-10): UAT bắt đầu tuần 28, tức 2027-04-12 (tuần 1 tính từ 2026-10-05), go-live cố định 2027-06-01. Sprint 2 kết thúc ngày 2026-10-25.
 
+Dòng nào gắn mã (JP-13, SCR001 Q1, khoá cấu hình…) là rủi ro chờ câu trả lời của khách; ba dòng về năng lực BE, lát dọc và QA không có mã vì số được tính từ giờ còn lại theo vai trên Project và lịch của bản LAB-1 v1, không phụ thuộc câu hỏi nào.
+
 | Rủi ro | Issue | Ảnh hưởng tới mốc nào | Hành động | Ai làm, khi nào |
 |---|---|---|---|---|
 | Hai BE không kịp mốc: giờ BE còn lại của Phase 1 là 1935, cần 16,1 sprint (hai BE × 60 giờ / sprint) mà trước UAT chỉ còn 13 sprint, thiếu khoảng 375 giờ BE (3,1 sprint). Giữ nhãn vai như hiện nay thì BE-1 xong khoảng 2027-06-18, sau go-live. | Mọi lá BE Phase 1 chưa xếp sprint; đại diện: #212 (E09-I01-S01), #158 (E04-I04-S01), #268 (E13-I02-S01) | Kết thúc Sprint 2 (2026-10-25) là hạn chốt phương án; UAT 2027-04-12 và go-live 2027-06-01 (LAB-1 v1, 2026-09-10) là mốc bị đe doạ | Ba phương án: (a) thêm một BE khoảng 6–7 sprint; (b) cắt hoặc dời khoảng 125 SWP việc BE khỏi Phase 1; (c) dời mốc UAT. Khuyến nghị: trình khách cả ba ngay, nghiêng về (a) vì (b) mất phạm vi và (c) chạm ngày go-live cố định | PM và BrSE dựng ba phương án kèm số liệu, gửi khách trước 2026-10-23; chủ dự án chọn phương án trước khi Sprint 2 kết thúc (2026-10-25) |

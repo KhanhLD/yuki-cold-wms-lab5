@@ -46,7 +46,7 @@ Nguyên tắc: không lấy lời "đã xong" của agent làm bằng chứng. S
 | Xếp sprint và ghi trường | Chủ dự án (2 câu hỏi), phiên chính chạy lại script, script đọc ngược | Hai lượt xếp đầu lệch ý đồ plan; lượt ghi đầu dừng lỗi đóng issue | Chủ dự án chỉnh hướng hai lần (chi tiết ở §3); phiên chính dựng lại kế hoạch ghi và kiểm giả lập bằng script, không tin báo cáo agent; đọc ngược sau ghi 0 khác biệt |
 | 6 file nộp | Script kiểm đủ phần / đủ cột, kiểm public, kiểm tổng số khớp Project | — | Mỗi file phải qua cả ba script trước cổng sau |
 
-<!-- G2/G3: phiên chính bổ sung -->
+| G2 — sau khi public | Reviewer độc lập: đọc trực tiếp 17 item trên Project, đối chiếu 5 issue mẫu giữa báo cáo HTML, ghi chép của chủ dự án, estimate.md và Project, tự tính lại tổng 13 epic, dò từng dòng rủi ro về mã câu hỏi thật, mở 12 đường dẫn không đăng nhập, đọc 2 bản sửa script chưa ai duyệt | Nhận ngay lần đầu: 0 Critical / High / Medium, 5 Low (một câu mô tả báo cáo HTML chưa đúng chữ hiện ra; ba dòng rủi ro năng lực không có mã câu hỏi vì tính từ chính Project; thiếu ảnh chụp lần thử ẩn danh) | Sửa câu chữ; giữ ba dòng rủi ro và nói rõ nguồn số, chờ chủ dự án xác nhận; bằng chứng thử ẩn danh là kết quả truy cập không đăng nhập do reviewer tự chạy lại |
 
 ## 3. Điểm đặc biệt khi làm với AI
 
