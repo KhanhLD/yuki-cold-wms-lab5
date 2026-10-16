@@ -216,7 +216,7 @@ Viết hợp đồng và cài ba API: liệt kê lượt kiểm theo nguồn và
 - Phụ thuộc: E13-I05-S02
 - Giai đoạn: 1
 ### Mô tả
-Làm bảng kết quả di trú theo từng lần diễn tập và theo nguồn (số nhận, từ chối trong đó có chờ nghiệp vụ xem, trùng, tỷ lệ từ chối, cờ tổng khớp), dòng ghi chú đẳng thức tổng nguồn bằng tổng bốn loại, giải thích bốn loại kết quả, và nút tải danh sách ngoại lệ. Màn có hiện từng dòng hay chỉ cho tải xuống chưa chốt, theo kết luận ở GAP-93.
+Làm bảng kết quả di trú theo từng lần diễn tập và theo nguồn (số nhận, từ chối trong đó có chờ nghiệp vụ xem, trùng, tỷ lệ từ chối, cờ tổng khớp), dòng ghi chú đẳng thức tổng nguồn bằng tổng bốn loại, giải thích bốn loại kết quả, và nút tải danh sách ngoại lệ. Màn có hiện từng dòng hay chỉ cho tải xuống chưa chốt; tạm chỉ cho tải danh sách ngoại lệ cho tới khi khách trả lời ở gói làm rõ E13-I06 (xem GAP-93).
 ### Định nghĩa xong
 - [ ] Bảng hiện đúng số liệu từ API; dòng tổng lệch được tô cờ rõ
 - [ ] Nút tải danh sách ngoại lệ cho ra tệp đúng nội dung
@@ -288,7 +288,7 @@ Cổng nghiệm thu di trú yêu cầu hai lần diễn tập, có lineage, có 
 - Phụ thuộc: E09-I04-S03, E09-I08-S01, E09-I08-S02
 - Giai đoạn: 1
 ### Mô tả
-Năm cổng nghiệm thu nghiệp vụ không có tài liệu thiết kế riêng nên bộ kịch bản được dựng từ các bảng ca biên đã có ở thiết kế chi tiết: chuỗi nhận – lô – phân bổ – chọn – xuất xe – POD không đi tắt, nhiệt độ (biên, vượt ngưỡng, thiếu số đo, review trễ), hạn và đảo ngày, lịch tuyến và giờ làm của tài xế (kịch bản do E09 cung cấp, issue này chỉ gom và chạy), truy xuất và đối chiếu số lượng thu hồi. Mỗi kịch bản trỏ về kịch bản chấp nhận của màn và bản ghi kết quả mong đợi, để chủ nghiệp vụ của khách chạy lại và ký.
+Năm cổng nghiệm thu nghiệp vụ không có tài liệu thiết kế riêng nên bộ kịch bản được dựng từ các bảng ca biên đã có ở thiết kế chi tiết: luồng hàng đi từ nhận hàng, vào lô, phân bổ, lấy hàng, xuất xe tới POD mà không bước nào bị bỏ qua, nhiệt độ (biên, vượt ngưỡng, thiếu số đo, review trễ), hạn và đảo ngày, lịch tuyến và giờ làm của tài xế (kịch bản do E09 cung cấp, issue này chỉ gom và chạy), truy xuất và đối chiếu số lượng thu hồi. Mỗi kịch bản trỏ về kịch bản chấp nhận của màn và bản ghi kết quả mong đợi, để chủ nghiệp vụ của khách chạy lại và ký.
 ### Định nghĩa xong
 - [ ] Mỗi trong năm cổng có danh sách kịch bản đánh số, dữ liệu vào, kết quả mong đợi dạng bản ghi hay log, trỏ tới ca biên hoặc kịch bản chấp nhận nguồn
 - [ ] Mỗi kịch bản có chủ chạy và người ký ở phía khách theo chủ sở hữu của cổng

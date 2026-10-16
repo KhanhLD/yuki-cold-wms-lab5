@@ -349,7 +349,7 @@ Module nhiệt độ nghe sự kiện nhận hàng bị từ chối hoặc tạm
 - Phụ thuộc: E10-I06-S02
 - Giai đoạn: 1
 ### Mô tả
-Màn chỉ có wireframe bố cục. Làm hàng đợi case theo mức độ và thời gian còn lại, form chi tiết case (lý do, điều tra, hành động khắc phục, đính tệp với giới hạn kích thước và loại tệp lấy từ cấu hình chung), nút đóng case, liên kết sang màn quyết định lô, và liên kết mã tuyến chỉ hiện khi vai trò được mở màn đích. Nơi quyết định giải phóng hoặc huỷ phải theo kết luận ở GAP-76 trước khi vẽ nút.
+Màn chỉ có wireframe bố cục. Làm hàng đợi case theo mức độ và thời gian còn lại, form chi tiết case (lý do, điều tra, hành động khắc phục, đính tệp với giới hạn kích thước và loại tệp lấy từ cấu hình chung), nút đóng case, liên kết sang màn quyết định lô, và liên kết mã tuyến chỉ hiện khi vai trò được mở màn đích. Nơi quyết định giải phóng hoặc huỷ chỉ ở màn quyết định lô của kho, màn này chỉ có liên kết sang đó (xem GAP-76), nên không vẽ nút quyết định.
 ### Định nghĩa xong
 - [ ] Hàng đợi hiện cột mức độ và thời gian còn lại từ dữ liệu máy chủ, sắp theo mức độ
 - [ ] Đóng case thiếu trường hoặc thiếu tệp hiện lỗi đúng trường từ máy chủ; case đã đóng chuyển sang chế độ chỉ xem
@@ -396,7 +396,7 @@ Viết hợp đồng và cài API-TMP-09 (mục hàng đợi độ đủ theo k�
 - Phụ thuộc: E10-I07-S01
 - Giai đoạn: 1
 ### Mô tả
-Làm bộ lọc kỳ, bảng phiên bản ngưỡng có hiệu lực trong kỳ (không vẽ số cứng, lấy từ dữ liệu), khối độ đủ theo từng loại điểm đo, danh sách chỗ thiếu có ghi chú rằng hệ thống không tự đóng, và nút tải bộ hồ sơ theo kỳ. Hai dòng hồ sơ vệ sinh ca và khách – tài xế chỉ hiển thị khi có nguồn dữ liệu, theo kết luận ở GAP-80.
+Làm bộ lọc kỳ, bảng phiên bản ngưỡng có hiệu lực trong kỳ (không vẽ số cứng, lấy từ dữ liệu), khối độ đủ theo từng loại điểm đo, danh sách chỗ thiếu có ghi chú rằng hệ thống không tự đóng, và nút tải bộ hồ sơ theo kỳ. Hai dòng hồ sơ vệ sinh ca và khách – tài xế chỉ hiển thị khi có nguồn dữ liệu; tạm không vẽ hai dòng này cho tới khi khách trả lời ở gói làm rõ E10-I08 (xem GAP-80).
 ### Định nghĩa xong
 - [ ] Bộ lọc kỳ kiểm ngày bắt đầu không sau ngày kết thúc; kỳ quá lớn hiện thông báo từ chối thay vì báo cáo cụt
 - [ ] Khối độ đủ và danh sách chỗ thiếu hiện đúng dữ liệu API trong ca có và không có khoảng trống

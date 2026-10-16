@@ -89,7 +89,7 @@ Phần quy tắc giờ lái của SCR033 (khối ngưỡng nhiệt của cùng m
 - [ ] Hiện đủ nhóm tham số của phiên bản được chọn, không chỉ hai dòng trần tháng và năm của wireframe; wireframe bổ sung được chủ dự án duyệt
 - [ ] Biểu mẫu tạo phiên bản có ngày hiệu lực không chọn được quá khứ, báo lỗi tại trường theo ràng buộc của server
 - [ ] Nút duyệt và từ chối chỉ hiện cho trưởng phòng vận tải khác người đề xuất; từ chối yêu cầu lý do
-- [ ] Đính kèm bằng chứng chỉ qua API xin URL ký sẵn của E01-I18 (không dựng đường tải riêng), theo mục đích được chốt ở GAP-70; thiếu bằng chứng thì nút duyệt phiên bản không phải "RFP tóm tắt" bị khoá kèm giải thích
+- [ ] Đính kèm bằng chứng chỉ qua API xin URL ký sẵn của E01-I18 (không dựng đường tải riêng), dùng mục đích tải "bằng chứng tuyến" sẵn có, không thêm mục đích mới (xem GAP-70 ở bảng chỗ hở của bản phân rã); thiếu bằng chứng thì nút duyệt phiên bản không phải "RFP tóm tắt" bị khoá kèm giải thích
 - [ ] Dòng ghi chú "kết quả đã ghi không được tính lại" hiện đúng chỗ
 - [ ] Loading, lỗi mạng, lỗi quyền hiện đúng; nhãn tiếng Nhật theo wireframe đã duyệt
 ### Chỗ hở
@@ -118,11 +118,11 @@ Trần tháng và năm của bộ kiểm cộng dồn giờ làm thật nên c�
 Dựng bảng giờ làm (một dòng mỗi tài xế mỗi ngày: ca làm hoặc ngày nghỉ) và chi tiết hoá rồi hiện thực API-MST-22 (ghi cơ sở giờ làm của tài xế), chưa có hợp đồng. Chỉ lưu định danh vận hành của tài xế, không họ tên hay số điện thoại. Danh sách giá trị cột nguồn nhập chưa chốt nên không đặt ràng buộc cứng.
 ### Định nghĩa xong
 - [ ] Migration bảng giờ làm đúng thiết kế TRANSPORT_DB: duy nhất theo tài xế và ngày, loại ca làm hoặc ngày nghỉ, giờ bắt đầu và kết thúc rỗng khi nghỉ, số phút lái không âm, đoạn trong ca dạng mảng
-- [ ] Tài liệu hợp đồng API-MST-22 viết xong: trường, vai được ghi theo quyết định ở GAP-65, mã lỗi, khoá lạc quan khi sửa
+- [ ] Tài liệu hợp đồng API-MST-22 viết xong: trường, vai được ghi (tạm chỉ quản trị ghi như danh mục API, cho tới khi khách trả lời ở gói làm rõ E09-I09; xem GAP-65), mã lỗi, khoá lạc quan khi sửa
 - [ ] Ghi lại cùng tài xế cùng ngày cập nhật dòng cũ chứ không tạo dòng thứ hai; hai người sửa cùng lúc, một người nhận lỗi xung đột
 - [ ] Ghi được dòng ngày nghỉ; test chứng minh cửa sổ 14 ngày đọc đủ dòng nghỉ lẫn dòng làm
 - [ ] Bảng chỉ giữ định danh vận hành, không có cột cá nhân; không khoá ngoại sang bảng một năm của module master
-- [ ] Cột nguồn nhập không có ràng buộc giá trị cứng cho tới khi GAP-64 chốt; không có giá trị mẫu lọt vào môi trường thật
+- [ ] Cột nguồn nhập không có ràng buộc giá trị cứng cho tới khi khách trả lời nguồn giờ làm ở gói làm rõ E09-I09 (GAP-64); không có giá trị mẫu lọt vào môi trường thật
 ### Chỗ hở
 - GAP-64 nguồn giờ làm thực tế của tài xế chưa chốt
 - GAP-65 vai được ghi giờ làm mâu thuẫn giữa danh mục API và màn SCR036
@@ -140,7 +140,7 @@ Thêm vào SCR036 (khung danh sách xe, tài xế do E03 dựng) khối ghi gi�
 - [ ] Chọn một tài xế hiện khối ghi giờ làm với các trường theo wireframe; ghi thành công cập nhật danh sách giờ đã ghi
 - [ ] Báo lỗi tại trường khi thiếu ngày, giờ lái âm hoặc lớn hơn tổng thời gian ràng buộc
 - [ ] Ghi được ngày nghỉ không có giờ
-- [ ] Khối chỉ hiện với vai được phép theo quyết định ở GAP-65; vai khác chỉ xem hoặc không thấy
+- [ ] Khối ghi chỉ hiện với quản trị (tạm như danh mục API, cho tới khi khách trả lời ở gói làm rõ E09-I09; xem GAP-65); vai khác chỉ xem hoặc không thấy
 - [ ] Hiện câu nhắc chỉ lưu định danh vận hành, không nhập thông tin cá nhân
 - [ ] Loading, lỗi mạng, lỗi quyền hiện đúng
 ### Chỗ hở
@@ -223,7 +223,7 @@ Năm dòng kết quả: 拘束時間 ngày (có xét yêu cầu kéo dài đã d
 - [ ] Có kéo dài đã duyệt của chính tuyến: trần là số phút đã duyệt, vượt thì chặn (YCL-RTE-042); vượt trần kéo dài của phiên bản dù đã duyệt thì chặn (YCL-RTE-043); kéo dài của tuyến khác không có tác dụng
 - [ ] Dòng tháng (YCL-RTE-049) và năm (YCL-RTE-048) cộng dồn giờ thực mọi ca trong kỳ, nêu phút vượt và kỳ tính; ngày 31/03 thuộc năm bắt đầu 01/04 của năm trước (ca biên 14); tuyến ngày 5 thấy tuyến đã công bố ngày 25 cùng tháng (ca biên 16)
 - [ ] Dòng làm thêm năm (YCL-RTE-050) tính phần giờ làm vượt mức chuẩn mỗi ca của phiên bản, không tính thời gian nghỉ, cộng dồn năm; không giả định luôn có giờ làm thêm
-- [ ] Dòng khung giờ dịch vụ (YCL-RTE-032) chặn khi điểm dừng hoặc giờ xuất phát nằm ngoài khung của phiên bản; ranh khung xử lý theo quyết định ở GAP-66
+- [ ] Dòng khung giờ dịch vụ (YCL-RTE-032) chặn khi điểm dừng hoặc giờ xuất phát nằm ngoài khung của phiên bản; ranh khung tạm tính là trong khung cho tới khi khách trả lời ở gói làm rõ E09-I09 (xem GAP-66)
 - [ ] Đổi trần ngày trong phiên bản luật thì kết quả đổi mà không sửa mã (ca biên 12); không có hằng số ngưỡng nào trong mã nguồn
 ### Chỗ hở
 - GAP-63 các cách hiểu và định nghĩa của JP-12, JP-13, JP-14 còn mở (làm thêm, cắt ngày 24 giờ, bình quân hai tuần, mức nghỉ, kỳ năm)
@@ -447,7 +447,7 @@ Gắn vào khung SCR018 của E08-I04-S02: nút công bố với thông báo ch�
 - Nhãn: type:issue, constraint:jp-2024-driver-hours
 - Spec: API-RTE-11, API-RTE-14, FR-SCH-05, TRANSPORT_DB
 ### Mô tả
-Ghi tai nạn, hỏng xe, thiên tai hoặc trễ có bằng chứng khách quan thành bản ghi bất biến của tuyến, khoá giờ kế hoạch của tuyến đó, và báo cáo tuân thủ tách ba phần kế hoạch, thực tế, sự kiện để không ai sửa giờ kế hoạch nhằm che vi phạm. Phần vượt trần theo thực tế hiện nguyên và có nhãn "có sự kiện có bằng chứng", không ghi đè kết quả đã tính. Phase 1 theo thiết kế LAB-4 nhưng quyết định D-12 còn chờ khách; nếu khách chọn Phase 2 thì cả issue chuyển giai đoạn. Hai API chưa có hợp đồng, SCR018 mới có wireframe. Cổng báo cáo SCR024 còn một báo cáo riêng về tuân thủ giờ lái (báo cáo số 10 trong danh mục 12 loại) mà bản kiểm kê chưa tính vào luật 2024: LAB-4 chỉ có tên, nên issue này kèm một phần định nghĩa và đăng ký báo cáo đó vào khung của E12.
+Khi tuyến gặp sự cố ngoài kế hoạch (tai nạn, xe hỏng, thiên tai, hoặc chậm giờ mà có chứng cứ độc lập), hệ thống lưu thành một bản ghi không sửa được của tuyến đó và khoá giờ kế hoạch của tuyến. Báo cáo tuân thủ chia làm ba phần là kế hoạch, thực tế và sự kiện, để không ai chỉnh giờ kế hoạch cho che được vi phạm. Phần vượt trần theo giờ thực tế vẫn hiện nguyên và gắn nhãn "có sự kiện có bằng chứng"; kết quả tuân thủ đã tính được giữ nguyên. Phase 1 theo thiết kế LAB-4 nhưng quyết định D-12 còn chờ khách; nếu khách chọn Phase 2 thì cả issue chuyển giai đoạn. Hai API chưa có hợp đồng, SCR018 mới có wireframe. Cổng báo cáo SCR024 còn một báo cáo riêng về tuân thủ giờ lái (báo cáo số 10 trong danh mục 12 loại) mà bản kiểm kê chưa tính vào luật 2024: LAB-4 chỉ có tên, nên issue này kèm một phần định nghĩa và đăng ký báo cáo đó vào khung của E12.
 ### Chỗ hở
 - GAP-68 D-12 chưa chốt làm ở Phase 1 và cách đánh dấu sự kiện chưa trả lời
 - GAP-60 nhiều API của nhóm tuyến chưa có hợp đồng

@@ -2,15 +2,15 @@
 
 Mã học viên: `KhanhLD` · Đề: Product B (hệ thống quản lý kho lạnh và giao hàng cho thực phẩm tươi sống).
 
-Repo này là bài LAB-5: biến bộ thiết kế LAB-4 thành backlog trên GitHub Project, chấm điểm công việc bằng SWP, quy ra giờ và giả lập một sprint để lập báo cáo tiến độ. Sáu file markdown ở gốc repo là phần nộp; mỗi file trả lời một câu hỏi riêng (xem §4).
+Repo này là bài LAB-5: biến bộ thiết kế LAB-4 thành backlog trên GitHub Project, chấm điểm công việc bằng SWP, quy ra giờ và giả lập một sprint để lập báo cáo tiến độ. Sáu file markdown ở gốc repo là phần nộp; mỗi file trả lời một câu hỏi riêng (xem §3).
 
 ## 1. Tổng quan
 
-- **Bản LAB-4 làm đầu vào:** bộ thiết kế LAB-4 đã nộp ngày 2026-10-14. Bộ này được giữ đóng băng trong suốt LAB-5: mọi chỗ backlog đi lệch khỏi thiết kế được ghi ở PREMISE.md, không sửa ngược vào LAB-4.
+- **Bản LAB-4 làm đầu vào:** bộ thiết kế LAB-4 đã nộp ngày 2026-10-14. Bộ này được giữ đóng băng trong suốt LAB-5: mọi chỗ backlog đi lệch khỏi thiết kế được ghi ở PREMISE.md, không sửa ngược vào LAB-4. Bộ LAB-4 nộp riêng, không nằm trong repo này; các trích dẫn dạng `specs/…:dòng` trong 6 file là đường dẫn và số dòng bên trong bộ LAB-4 đó.
 - **PREMISE có thay đổi:** có. Khi chia việc lộ ra chỗ thiết kế thiếu đường ghi, thiếu màn hoặc hai tài liệu nói hai cách, nên PREMISE.md ghi 15 dòng thêm / bỏ / sửa spec, 16 giả định bổ sung và 7 hướng đã chốt. Không có bản spec viết lại nào trong repo.
 - Số epic: 13
 - **Quy mô backlog:** 13 epic, 118 issue, 148 sub-issue (279 issue GitHub, 205 item lá được chấm điểm). Tổng 1060 SWP, 3180 giờ (bảng theo epic ở estimate.md).
-- **Sprint giả lập đã chạy:** Sprint 1 (2026-09-28 → 2026-10-09), sprint dài 2 tuần, đội giả lập theo vai (BrSE, BE-1, BE-2, FE-1, QA-1, PM).
+- **Sprint giả lập đã chạy:** Sprint 1 (2026-09-28 → 2026-10-09), sprint dài 2 tuần, đội giả lập theo vai (BrSE, BE-1, BE-2, FE-1, QA-1, PM). Đội 6 vai và lịch sprint là giả định chủ dự án chọn cho bài. Đội này nhỏ hơn đội LAB-1 v1 đã báo giá (3 BE và 1 Infra): việc hạ tầng ở đây gán cho BE, nên khoảng thiếu giờ BE ở dòng rủi ro về BE của progress-report.md đến từ giả định này; với 3 BE như LAB-1 thì khoảng thiếu đó không còn.
 - Project hiện trạng thái cuối Sprint 1 (2026-10-09); ngày đóng issue mà GitHub ghi là ngày ghi kết quả giả lập lên Project, không phải ngày trong sprint, và Sprint 2 chưa được giả lập.
 - Ngày của ba Iteration trên Project đúng như lịch giả lập, không phải dời ngày nào.
 
@@ -19,9 +19,9 @@ Repo này là bài LAB-5: biến bộ thiết kế LAB-4 thành backlog trên Gi
 - Repo: https://github.com/KhanhLD/yuki-cold-wms-lab5
 - GitHub Project: https://github.com/users/KhanhLD/projects/1
 - Báo cáo HTML do skill chấm SWP xuất ra, đường dẫn trong repo: [`docs/estimate-swp-khanhld-project-1-20261015-1710.html`](docs/estimate-swp-khanhld-project-1-20261015-1710.html)
-- Cùng báo cáo đó mở bằng trình duyệt qua GitHub Pages: https://khanhld.github.io/yuki-cold-wms-lab5/estimate-swp-khanhld-project-1-20261015-1710.html (mở file `.html` trên github.com chỉ thấy mã nguồn, nên báo cáo được đưa lên Pages).
+- Cùng báo cáo đó mở bằng trình duyệt qua GitHub Pages: https://khanhld.github.io/yuki-cold-wms-lab5/estimate-swp-khanhld-project-1-20261015-1710.html (mở file `.html` trên github.com chỉ thấy mã nguồn, nên báo cáo được đưa lên Pages). Gốc Pages https://khanhld.github.io/yuki-cold-wms-lab5/ cũng tự chuyển thẳng tới báo cáo này (trang `docs/index.html`).
 - Báo cáo HTML ghi tổng **1057 SWP**, còn Project và 6 file markdown ghi **1060 SWP**. Chênh đúng 3 SWP ở issue #102 (E10-I03): chủ dự án nâng 5 → 8 SWP sau khi skill xuất báo cáo. HTML giữ nguyên bản skill xuất (không sửa tay), nên trong HTML #102 vẫn là 5 SWP và epic #11 (E10) là 110 thay vì 113. Lý do chỉnh tay: estimate.md, mục "Vì sao #131 và #268 …".
-- Đã mở thử bằng cửa sổ ẩn danh (chưa đăng nhập GitHub) ngày 2026-10-16: repo, Project (cả 4 view) và báo cáo HTML qua Pages đều xem được; 6 file markdown và biểu đồ burndown hiển thị đúng trên github.com. Ba view `Bảng — Status`, `Theo sprint`, `Lộ trình` chỉ hiện việc được chấm điểm trực tiếp (bộ lọc `no:sub-issues-progress`) để tổng SWP theo cột / theo sprint không cộng trùng epic và issue cha; view `Cây epic` giữ nguyên phân cấp epic → issue → sub-issue, mỗi epic mang tổng SWP và giờ của các việc con. Lý do tách như vậy: task-breakdown.md §1.
+- Đã thử truy cập ẩn danh (không đăng nhập) ngày 2026-10-16, theo hai cách: mở bằng trình duyệt chưa đăng nhập GitHub, và gọi `curl` không kèm token. Repo, Project (cả 4 view) và báo cáo HTML qua Pages đều xem được; 6 file markdown và biểu đồ burndown hiển thị đúng trên github.com. Không lưu ảnh chụp màn hình của lần thử này. Ba view `Bảng — Status`, `Theo sprint`, `Lộ trình` chỉ hiện việc được chấm điểm trực tiếp (bộ lọc `no:sub-issues-progress`) để tổng SWP theo cột / theo sprint không cộng trùng epic và issue cha; view `Cây epic` giữ nguyên phân cấp epic → issue → sub-issue, mỗi epic mang tổng SWP và giờ của các việc con. Lý do tách như vậy: task-breakdown.md §1.
 
 ## 3. Cấu trúc repo
 
@@ -35,7 +35,7 @@ Mọi mục ở gốc repo:
 | `estimate.md` | Kết quả chấm SWP: issue mẫu đã kiểm và điểm chốt, cách quy ra giờ, tổng theo epic, so với estimate LAB-1 |
 | `progress-report.md` | Báo cáo Sprint 1: trạng thái, burndown, rủi ro trễ và hành động |
 | `AI-report.md` | Đã dùng AI thế nào: skill và ý đồ prompt cho từng việc, ai review ở bước nào, chỗ hiệu quả và chỗ chưa tốt |
-| `docs/` | Báo cáo HTML mà skill chấm SWP xuất ra (giữ nguyên từng byte) và file `.nojekyll` để GitHub Pages phục vụ thư mục này |
+| `docs/` | Báo cáo HTML mà skill chấm SWP xuất ra (giữ nguyên từng byte), trang `index.html` chuyển gốc Pages tới báo cáo đó, và file `.nojekyll` để GitHub Pages phục vụ thư mục này |
 | `backlog/` | 13 file markdown, mỗi epic một file (tên file bắt đầu bằng mã epic dùng trong backlog): nguồn backlog-as-code mà script đã kiểm rồi đăng thành issue. File nguồn còn mục "Chỗ hở" của từng item — phần này không đăng vào thân issue; bảng chỗ hở đầy đủ ở task-breakdown.md §4 |
 | `.gitignore` | Chặn tệp tạm, ảnh, tệp môi trường khỏi repo |
 
@@ -55,7 +55,7 @@ Cột Spec liệt kê các đơn vị chính của thiết kế LAB-4 mà epic p
 | SCR009, SCR010, SCR011, SCR035, SCR037; API-MST, API-ALC; ALC_DATE_REVERSAL_CHECK, ALC_FEFO_ALLOCATION; ALLOCATION_DB; ADR-004; nhóm FR-OUT; JP-06 … JP-10, JP-16 · PREMISE PR-11, PR-12, GD-01, GD-04, GD-07 | #7 — Hạn dùng & phân bổ FEFO | Ràng buộc FEFO, hạn dùng và 日付逆転; chưa nạp xong lịch sử giao từ di trú thì chưa bật phân bổ thật |
 | SCR012, SCR013, SCR014, SCR015; API-MST, API-SYS, API-ALC, API-OUT; OUT_DEPARTURE_GATE; SHIPPING_DB; ADR-007; nhóm FR-OUT; JP-01, JP-02, JP-03, JP-05, JP-06, JP-10, JP-15, JP-18 · PREMISE PR-11, GD-01, GD-04, HC-03 | #8 — Xuất kho & giao hàng | Cổng xuất phát kiểm nhiệt xe, seal, giờ và 日付逆転 trước khi xe rời kho; mang mã truy xuất gạo / bò theo hàng |
 | SCR016, SCR018; API-RTE; TRANSPORT_DB; ADR-008; nhóm FR-SCH, nhóm IF; JP-18 · PREMISE PR-01, PR-13, GD-01, GD-08, GD-09, GD-10 | #9 — Lập tuyến giao hàng | Thêm khối cấp / thay seal trên SCR018; lập tuyến dùng bộ kiểm giờ lái của #10, không chứa luật giờ lái |
-| SCR002, SCR016, SCR017, SCR018, SCR024, SCR033, SCR036; API-HOM, API-MST, API-SYS, API-RTE; OUT_DEPARTURE_GATE, RTE_DRIVER_DUTY_CHECK; TRANSPORT_DB; ADR-005, ADR-008, ADR-010, ADR-012; nhóm FR-SCH, FR-RPT, OPS; JP-11 … JP-14, JP-18 · PREMISE PR-14, GD-01, GD-06, GD-08, GD-11, GD-12, GD-16, HC-07 | #10 — Ràng buộc giờ lái xe tải 2024 (拘束時間) | Epic riêng cho luật giờ lái 2024, kể cả phần nằm trên màn của epic khác, để luật có đúng một chủ. Trần giờ chưa đối chiếu văn bản chính thức (PREMISE GD-16); làm trước các ràng buộc khác |
+| SCR002, SCR016, SCR017, SCR018, SCR024, SCR033, SCR036; API-HOM, API-MST, API-SYS, API-RTE; OUT_DEPARTURE_GATE, RTE_DRIVER_DUTY_CHECK; TRANSPORT_DB; ADR-005, ADR-008, ADR-010, ADR-012; nhóm FR-SCH, FR-RPT, OPS; JP-11 … JP-14, JP-18 · PREMISE PR-14, GD-01, GD-06, GD-08, GD-11, GD-12, GD-16, HC-07 | #10 — Ràng buộc giờ lái xe tải 2024 (拘束時間) | Epic riêng cho luật giờ lái 2024, kể cả phần nằm trên màn của epic khác, để luật có đúng một chủ. Trần giờ chưa đối chiếu văn bản chính thức (PREMISE GD-16). Sprint 1 làm trước phần nền mà lõi luật cần (khung module, API chung, đồng hồ nghiệp vụ ở #1 và bảng phiên bản luật #212) cùng gói câu hỏi pháp chế; 25 lá của epic có 3 lá ở Sprint 1 (11 SWP), 2 lá ở Sprint 3, 20 lá chưa xếp, nên các lá lõi kiểm giờ lái rơi vào sprint sau |
 | SCR019, SCR020, SCR021, SCR033; API-MST, API-SYS, API-TMP; TMP_LOGGER_INGEST_DEVIATION, TMP_LOT_RELEASE_APPROVAL; TEMPERATURE_DB; ADR-008, ADR-011; nhóm FR-TEMP, nhóm IF; JP-01 … JP-05, JP-17 · PREMISE PR-11, GD-13, HC-05, HC-06 | #11 — Nhiệt độ & HACCP | Chuỗi đo → cảnh báo → tạm giữ → quyết định lô; ngưỡng là dữ liệu có phiên bản. Các điểm chạm ở epic khác mang nhãn `constraint:haccp-temp` |
 | SCR022, SCR023; API-TRC; TRC_RECALL_CASE_LIFECYCLE, TRC_TRACEABILITY_SEARCH; TRACE_RECALL_DB; nhóm FR-TRC; JP-15 · PREMISE PR-11, PR-15, GD-15 | #12 — Truy xuất & thu hồi | Truy xuất gạo / bò và vòng đời case thu hồi; dấu chặn lô đặt qua giao diện của kho (#6). Phần thông báo thu hồi (FR-TRC-03) hoãn sang giai đoạn 2 nên không thành issue |
 | SCR002, SCR024, SCR025; API-ACS, API-HOM, API-RPT; PLATFORM_DB; nhóm FR-RPT, nhóm IF · PREMISE PR-06, GD-05, GD-06 | #13 — Trang chủ & báo cáo | Thêm một màn xem báo cáo dùng chung vì LAB-4 không có wireframe cho màn này |

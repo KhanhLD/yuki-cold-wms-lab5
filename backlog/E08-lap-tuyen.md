@@ -60,7 +60,7 @@ Hai API của SCR016. API đọc trả các đơn đã phân bổ của một ng
 - [ ] Tài liệu hợp đồng hai API (tham số, phản hồi, mã lỗi dùng lại từ bảng lỗi chung của LAB-4) viết xong và được đối chiếu với wireframe SCR016 và dòng api-list
 - [ ] API đọc phân loại đúng ba nhóm lý do chưa xếp: chưa phân bổ xong, không còn xe cùng dải nhiệt trong ngày, xếp được nhưng chưa xếp
 - [ ] API ghi chặn xe sai dải nhiệt, xe hoặc tài xế đã thuộc tuyến khác cùng ngày, đơn không hợp lệ (sai ngày, đã nằm tuyến khác, chưa phân bổ đủ); mỗi trường hợp có test
-- [ ] Giờ xuất phát ngoài khung dịch vụ bị từ chối khi nhập, đúng ranh khung vẫn nhận theo quyết định ở GAP-66
+- [ ] Giờ xuất phát ngoài khung dịch vụ bị từ chối khi nhập, đúng ranh khung vẫn nhận (tạm tính giờ đúng ranh là trong khung, khung lấy từ phiên bản luật, cho tới khi khách trả lời ở gói làm rõ E09-I09; xem GAP-66 ở bảng chỗ hở của bản phân rã)
 - [ ] Lịch giờ từng điểm dừng (đến, chờ, phục vụ, đi, giờ về depot) do một hàm dùng chung dựng ra, E09-I03-S01 gọi lại hàm này, không viết hai lần
 - [ ] Gửi lại cùng khoá idempotency không tạo tuyến thứ hai
 - [ ] Khung giờ nhận và thời gian phục vụ của khách đọc qua giao diện đặt tên của module master (bảng do E03 sở hữu); khách thiếu dữ liệu này trả mã lỗi dành riêng (YCL-RTE-027)
@@ -131,7 +131,7 @@ Hiện thực API-RTE-01 theo hợp đồng có sẵn cho danh sách, chi tiết
 - [ ] Chi tiết trả phiên bản kế hoạch, điểm dừng, phiên bản đã công bố và tiến độ theo điểm POD qua cổng nội bộ; không có điểm GPS
 - [ ] Tài xế chỉ đọc tuyến của mình và chỉ bản đã công bố; test chứng minh tài xế khác bị từ chối
 - [ ] Tài liệu hợp đồng API-RTE-10 viết xong; chuyển trạng thái sai thứ tự bị từ chối, huỷ bắt buộc lý do, bắt đầu và kết thúc ghi giờ thực tế
-- [ ] Danh sách trả kèm chỉ số "đã công bố / đã sửa sau công bố" trong tháng theo quyết định ở GAP-57
+- [ ] Danh sách trả kèm chỉ số "đã công bố / đã sửa sau công bố" trong tháng (tạm để danh sách tuyến tự trả chỉ số này, chưa cần API báo cáo của một tuyến; xem GAP-57 ở bảng chỗ hở của bản phân rã)
 ### Chỗ hở
 - GAP-57 chưa nói API nào trả chỉ số tuyến sửa sau công bố
 

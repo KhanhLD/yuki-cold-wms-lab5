@@ -370,7 +370,7 @@ Viết đặc tả chi tiết của màn (chọn cặp, khung mốc, bảng dòn
 - Nhãn: type:issue, type:clarification, constraint:fefo-expiry
 - Spec: SCR010, ALC_FEFO_ALLOCATION, BR-FEFO-01, ALC_DATE_REVERSAL_CHECK, SCR009
 ### Mô tả
-Gom các câu cần khách thật trả lời mà thiết kế hiện đang chạy theo cách đọc của nhà thầu: có đường vượt FEFO hay không và ai duyệt; ngoại lệ cửa sổ giao đã duyệt có vẫn chịu FEFO không; lô còn tồn nhận trước ngày đổi loại hạn dùng loại hạn cũ hay mới; độ sâu lịch sử làm mốc và việc xoá lịch sử cũ; ai ký xử lý cặp đang business-review. Soạn bằng ví dụ số liệu để người trả lời không phải đọc đặc tả.
+Gom các câu cần khách thật trả lời mà thiết kế hiện đang chạy theo cách đọc của nhà thầu: có đường vượt FEFO hay không và ai duyệt; ngoại lệ cửa sổ giao đã duyệt có vẫn chịu FEFO không; lô còn tồn nhận trước ngày đổi loại hạn dùng loại hạn cũ hay mới; độ sâu lịch sử làm mốc và việc xoá lịch sử cũ; ai ký xử lý cặp đang business-review; số lượng mặc định điền sẵn ở ô phân bổ (hiện lấy số nhỏ hơn giữa số chưa phân bổ và tồn lô, theo prototype) có đúng với người dùng kho và kinh doanh không; ô kết quả có cần hiện thêm tổng hạn và tỷ lệ áp dụng hay chỉ ngày giao cuối, luật và thoả thuận như hiện nay (nguồn của phần thêm là story bản sau, không phải RFP, nên không chặn). Soạn bằng ví dụ số liệu để người trả lời không phải đọc đặc tả.
 ### Định nghĩa xong
 - [ ] Bộ câu hỏi với ví dụ cụ thể gửi đúng người trả lời đã ghi trong sổ câu hỏi mở
 - [ ] Mỗi câu có câu trả lời ghi lại (người, ngày) hoặc ghi chưa trả lời kèm hạn nhắc kế tiếp

@@ -291,7 +291,7 @@ Dựng khối danh sách và form tạo, sửa xe và tài xế theo wireframe. 
 - Nhãn: type:issue, type:clarification
 - Spec: SCR026, SCR027, SCR028, SCR029, DR-MST-01
 ### Mô tả
-Gom các câu hỏi khách về dữ liệu gốc mà thiết kế hiện chỉ giữ mặc định của nhà thầu: SKU có phải qua đề nghị và duyệt không; có ngừng SKU không và ngừng ra sao; có cần phiên bản lên lịch sau ngày nghiệp vụ không; đổi dải nhiệt SKU khi còn tồn thì cảnh báo hay chặn; định dạng mã khách cũ; có cần ngày hiệu lực tương lai cho master còn lại; màn nào gán tài khoản cho tài xế; ma trận vai trò hai màn nhà cung cấp và vị trí kho. Các issue build vẫn chạy theo mặc định hiện tại; câu trả lời khác mặc định thì mở issue sửa.
+Gom các câu hỏi khách về dữ liệu gốc mà thiết kế hiện chỉ giữ mặc định của nhà thầu: SKU có phải qua đề nghị và duyệt không; có ngừng SKU không và ngừng ra sao; có cần phiên bản lên lịch sau ngày nghiệp vụ không; đổi dải nhiệt SKU khi còn tồn thì cảnh báo hay chặn; định dạng mã khách cũ; cận trên của thời gian dừng giao tại điểm giao (bản mẫu giới hạn 1 đến 240 phút nhưng không có nguồn, nếu cần giới hạn thì phải thêm khoá cấu hình mới); có cần ngày hiệu lực tương lai cho master còn lại; màn nào gán tài khoản cho tài xế; ma trận vai trò hai màn nhà cung cấp và vị trí kho. Các issue build vẫn chạy theo mặc định hiện tại; câu trả lời khác mặc định thì mở issue sửa.
 ### Định nghĩa xong
 - [ ] Gửi khách bộ câu hỏi đóng, mỗi câu kèm phương án mặc định và hệ quả nếu khác mặc định
 - [ ] Ghi câu trả lời thật vào nhật ký quyết định của dự án, đánh dấu câu nào khác mặc định

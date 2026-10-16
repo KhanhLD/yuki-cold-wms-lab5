@@ -424,10 +424,10 @@ Khung React 19 và TypeScript mà mọi màn đứng trong: bố cục khung (th
 - Nhãn: type:issue, type:clarification
 - Spec: DR-RET-01, NFR-BCP-01, ADR-009, PLATFORM_DB
 ### Mô tả
-Gom các câu hỏi khách chặn thiết kế hạ tầng và lưu giữ: thời hạn lưu giữ cho sổ audit, thông báo, bảng giao nhận, archive, đề nghị purge và người dùng; nhóm lưu giữ cho các bảng tồn kho, phân bổ, giao hàng (POD, seal, kiểm trước xuất phát) mà thiết kế chưa xếp nhóm; mốc tính một năm cho dữ liệu cá nhân (cả phần nhận diện khách ở dữ liệu gốc); vai trò được đặt hoặc gỡ legal hold; mô hình tài khoản AWS; có tính mất cả vùng Tokyo trong mục tiêu khôi phục không; ngôn ngữ của tài liệu kỹ thuật bàn giao. Mỗi câu kèm phương án đang dùng và hệ quả nếu khách chọn khác.
+Gom các câu hỏi khách chặn thiết kế hạ tầng và lưu giữ: thời hạn lưu giữ cho sổ audit, thông báo, bảng giao nhận, archive, đề nghị purge và người dùng; nhóm lưu giữ cho các bảng tồn kho, phân bổ, giao hàng (POD, seal, kiểm trước xuất phát) và cho nhóm bảng vận tải (phiên bản luật giờ lái, bảng ước tính di chuyển) mà thiết kế chưa xếp nhóm; phiên bản luật phải giữ ít nhất bằng thời gian các tuyến còn trỏ tới nó, mức ba năm theo nhóm tuyến là đề xuất đang dùng, chờ khách xác nhận; mốc tính một năm cho dữ liệu cá nhân (cả phần nhận diện khách ở dữ liệu gốc); vai trò được đặt hoặc gỡ legal hold; mô hình tài khoản AWS; có tính mất cả vùng Tokyo trong mục tiêu khôi phục không; ngôn ngữ của tài liệu kỹ thuật bàn giao. Mỗi câu kèm phương án đang dùng và hệ quả nếu khách chọn khác.
 ### Định nghĩa xong
 - [ ] Gói câu hỏi viết bằng tiếng Nhật trang trọng, mỗi câu nêu phương án đang dùng và hệ quả nếu đổi
-- [ ] Danh sách bảng chưa có nhóm lưu giữ (tồn kho, phân bổ, giao hàng, phần nhận diện khách) gom từ các epic nghiệp vụ và đưa vào gói câu hỏi
+- [ ] Danh sách bảng chưa có nhóm lưu giữ (tồn kho, phân bổ, giao hàng, phần nhận diện khách, phiên bản luật giờ lái và bảng ước tính di chuyển của vận tải) gom từ các epic nghiệp vụ và đưa vào gói câu hỏi
 - [ ] Câu trả lời được ghi vào tài liệu thiết kế kèm nguồn; câu chưa có trả lời được liệt thành giả định đang dùng
 - [ ] Các issue phụ thuộc (E01-I02, E01-I04, E01-I08, E01-I17) được cập nhật theo câu trả lời hoặc ghi rõ giả định
 ### Chỗ hở
