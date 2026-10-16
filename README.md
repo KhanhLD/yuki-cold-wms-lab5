@@ -20,7 +20,7 @@ Repo này là bài LAB-5: biến bộ thiết kế LAB-4 thành backlog trên Gi
 - GitHub Project: https://github.com/users/KhanhLD/projects/1
 - Báo cáo HTML do skill chấm SWP xuất ra, đường dẫn trong repo: [`docs/estimate-swp-khanhld-project-1-20261015-1710.html`](docs/estimate-swp-khanhld-project-1-20261015-1710.html)
 - Cùng báo cáo đó mở bằng trình duyệt qua GitHub Pages: https://khanhld.github.io/yuki-cold-wms-lab5/estimate-swp-khanhld-project-1-20261015-1710.html (mở file `.html` trên github.com chỉ thấy mã nguồn, nên báo cáo được đưa lên Pages).
-- Đã mở thử bằng cửa sổ ẩn danh (chưa đăng nhập GitHub) ngày 2026-10-16: repo, Project (cả 4 view) và báo cáo HTML qua Pages đều xem được; 6 file markdown và biểu đồ burndown hiển thị đúng trên github.com. Ba view `Bảng — Status`, `Theo sprint`, `Lộ trình` chỉ hiện việc được chấm điểm trực tiếp (bộ lọc `no:sub-issues-progress`) để tổng SWP theo cột / theo sprint không cộng trùng epic và issue cha; view `Cây epic` giữ nguyên phân cấp epic → issue → sub-issue, mỗi epic mang tổng SWP và giờ của các việc con.
+- Đã mở thử bằng cửa sổ ẩn danh (chưa đăng nhập GitHub) ngày 2026-10-16: repo, Project (cả 4 view) và báo cáo HTML qua Pages đều xem được; 6 file markdown và biểu đồ burndown hiển thị đúng trên github.com. Ba view `Bảng — Status`, `Theo sprint`, `Lộ trình` chỉ hiện việc được chấm điểm trực tiếp (bộ lọc `no:sub-issues-progress`) để tổng SWP theo cột / theo sprint không cộng trùng epic và issue cha; view `Cây epic` giữ nguyên phân cấp epic → issue → sub-issue, mỗi epic mang tổng SWP và giờ của các việc con. Lý do tách như vậy: task-breakdown.md §1.
 
 ## 3. Cấu trúc repo
 
