@@ -20,7 +20,7 @@ Repo này là bài LAB-5: biến bộ thiết kế LAB-4 thành backlog trên Gi
 - GitHub Project: https://github.com/users/KhanhLD/projects/1
 - Báo cáo HTML do skill chấm SWP xuất ra, đường dẫn trong repo: [`docs/estimate-swp-khanhld-project-1-20261015-1710.html`](docs/estimate-swp-khanhld-project-1-20261015-1710.html)
 - Cùng báo cáo đó mở bằng trình duyệt qua GitHub Pages: https://khanhld.github.io/yuki-cold-wms-lab5/estimate-swp-khanhld-project-1-20261015-1710.html (mở file `.html` trên github.com chỉ thấy mã nguồn, nên báo cáo được đưa lên Pages).
-- TODO-ẨN-DANH
+- Đã mở thử bằng cửa sổ ẩn danh (chưa đăng nhập GitHub) ngày 2026-10-16: repo, Project (cả 3 view) và báo cáo HTML qua Pages đều xem được; 6 file markdown và biểu đồ burndown hiển thị đúng trên github.com. Các view của Project chỉ hiện việc được chấm điểm trực tiếp (bộ lọc `no:sub-issues-progress`) để tổng SWP không cộng trùng epic và issue cha.
 
 ## 3. Cấu trúc repo
 
