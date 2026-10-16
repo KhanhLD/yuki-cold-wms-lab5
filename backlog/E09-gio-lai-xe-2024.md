@@ -549,7 +549,7 @@ Một văn bản gửi khách (tiếng Nhật lịch sự) gom hai nhóm câu LA
 - [ ] Văn bản không đưa số liệu pháp lý nào ngoài các số LAB-4 đã ghi, và gắn nhãn rõ số nào là tóm tắt RFP, số nào là cách hiểu nhà thầu chưa xác nhận
 - [ ] Văn bản được trưởng nhóm duyệt về tiếng Nhật lịch sự (keigo) trước khi gửi
 - [ ] Mỗi câu trả lời của khách được ghi vào log quyết định kèm người trả lời và ngày; câu trả lời đổi giá trị thì sinh việc tạo phiên bản luật mới (E09-I01-S02), không sửa mã
-- [ ] Các dòng chỗ hở GAP-61 đến GAP-68 được đóng hoặc chuyển trạng thái kèm dẫn chứng sau mỗi lần khách trả lời
+- [ ] Các dòng chỗ hở GAP-61 đến GAP-68 (bảng chỗ hở của bản phân rã) được đóng hoặc chuyển trạng thái kèm dẫn chứng sau mỗi lần khách trả lời
 ### Chỗ hở
 - GAP-61 các trần 拘束時間, JP-13, JP-14 chưa đối chiếu với 改善基準告示; mốc kiểm lại trước khi đóng băng thiết kế đã trôi qua
 

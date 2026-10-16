@@ -1,6 +1,6 @@
 # Báo cáo tiến độ — Sprint 1
 
-Iteration "Sprint 1" trên GitHub Project, giả lập từ 2026-09-28 đến 2026-10-09. Báo cáo ghi trạng thái cuối ngày 2026-10-09 và được viết ngày 2026-10-16. Số liệu là số giả lập: ngày một issue chuyển Done là ngày giả lập, còn ngày đóng issue trên GitHub là ngày ghi dữ liệu. Lịch Sprint 1 là lịch giả lập, bắt đầu sớm hơn ngày khởi động dự án 2026-10-05 ghi trong LAB-1 và RFP. Các phản hồi của khách ghi trong báo cáo (gói #33 và #54) cũng là giả lập: không có nội dung thật và không đổi giả định nào trong thiết kế. Sprint 2 chưa được giả lập: các issue Sprint 2 và Sprint 3 trên Project đều đang Todo.
+Iteration "Sprint 1" trên GitHub Project, giả lập từ 2026-09-28 đến 2026-10-09. Báo cáo ghi trạng thái cuối ngày 2026-10-09 và được viết ngày 2026-10-16. Số liệu là số giả lập: ngày một issue chuyển Done là ngày giả lập, còn ngày đóng issue trên GitHub là ngày ghi dữ liệu. Lịch Sprint 1 là lịch giả lập, bắt đầu sớm hơn ngày khởi động dự án 2026-10-05 ghi trong RFP và trong bản ước lượng đã báo giá (gọi tắt là LAB-1 trong báo cáo này). Các phản hồi của khách ghi trong báo cáo (gói #33 và #54) cũng là giả lập: không có nội dung thật và không đổi giả định nào trong thiết kế. Sprint 2 chưa được giả lập: các issue Sprint 2 và Sprint 3 trên Project đều đang Todo.
 
 Kế hoạch Sprint 1 là 17 issue lá, 75 SWP, 225 giờ. Kết quả: 12 issue Done, 58 SWP (tức 77,3 % kế hoạch), 174 giờ. Năm issue còn lại chưa xong (17 SWP) vẫn thuộc Iteration Sprint 1; việc làm tiếp ở Sprint 2 được viết thành hành động ở mục rủi ro.
 
@@ -69,7 +69,7 @@ Cả năm issue dở đều dở vì chờ khách chứ không vì đội làm c
 
 ## Rủi ro trễ
 
-Các hành động và ngày dưới đây là kế hoạch lập ở cuối Sprint 1. Mốc dự án (LAB-1): UAT bắt đầu tuần 28, tức 2027-04-12 (tuần 1 tính từ 2026-10-05), go-live cố định 2027-06-01. Trước UAT còn hai đợt diễn tập di trú: đợt 1 vào tuần 20–22 (2027-02-15 đến 2027-03-07) và đợt 2 vào tuần 26–27 (2027-03-29 đến 2027-04-11). Sprint 2 kết thúc ngày 2026-10-25. Báo cáo dựa trên đội giả định sáu vai (BrSE, BE-1, BE-2, FE-1, QA-1, PM); đội này nhỏ hơn đội của LAB-1, như nói ở dòng đầu bảng.
+Các hành động và ngày dưới đây là kế hoạch lập ở cuối Sprint 1. Mốc dự án lấy từ lịch của LAB-1: UAT bắt đầu tuần 28, tức 2027-04-12 (tuần 1 tính từ 2026-10-05), go-live cố định 2027-06-01. Trước UAT còn hai đợt diễn tập di trú: đợt 1 vào tuần 20–22 (2027-02-15 đến 2027-03-07) và đợt 2 vào tuần 26–27 (2027-03-29 đến 2027-04-11). Sprint 2 kết thúc ngày 2026-10-25. Báo cáo dựa trên đội giả định sáu vai (BrSE, BE-1, BE-2, FE-1, QA-1, PM); đội này nhỏ hơn đội của LAB-1, như nói ở dòng đầu bảng.
 
 | Rủi ro | Issue | Ảnh hưởng tới mốc nào | Hành động | Ai làm, khi nào |
 |---|---|---|---|---|
