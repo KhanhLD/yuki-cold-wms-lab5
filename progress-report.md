@@ -43,6 +43,12 @@ Bảng theo ngày dưới đây là số SWP còn lại cuối mỗi ngày; cộ
 | 2026-10-09 | 0.0 | 17 | #141 (E02-I01-S02) Done (API phiên, chọn nơi lưu phiên), #201 (E07-I07-S01) Done; #107 (E10-I08) chưa có trả lời sau 6 ngày làm việc → Blocked; Sprint review: 58 / 75 SWP Done (77,3 %); #212 (E09-I01-S01) In Progress ~60 %; 5 lá dở giữ Iteration Sprint 1, làm tiếp từ Sprint 2 (2026-10-12); phần còn lại của chuỗi đăng nhập (#140 (E02-I01-S01), #143 (E02-I01-S04)) và CI (#18 (E01-I05)) đã xếp Sprint 2 |
 
 ```mermaid
+---
+config:
+  xyChart:
+    width: 900
+    height: 170
+---
 xychart-beta
     title "Burndown Sprint 1 (giả lập)"
     x-axis ["09-28", "09-29", "09-30", "10-01", "10-02", "10-05", "10-06", "10-07", "10-08", "10-09"]
